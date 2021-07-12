@@ -1,0 +1,56 @@
+<a href=home.html > Home </a> |
+<a href=about.html > About </a> |
+<a href=register.html > Register </a> |
+<a href=contact.html > Contact </a> |
+<a href=login.html > Login </a> |
+<a href=show.html > Show </a> |
+
+<center>
+<br><b><u> Registration form </u>
+<br><br><br>
+<table border='0'>
+<tr> <td> Full name <td> <input id=i1 >
+<tr> <td> User Id <td> <input id=i2 >
+<tr> <td> Password <td> <input type='password' input id=i3 >
+<tr> <td> Email Id <td> <input id=i4>
+<tr> <td> Contact no <td> <input type='number' id=i5>
+<tr> <td> Date of Birth <td> <input type=date input id=i6>
+<tr> <td> Address <td> <input id=i7>
+<tr> <td> City <td> <input id=i8>
+<tr> <td> State <td> <input id=i9>
+<tr> <td> Country <td><input value='India' id=i10>
+</select>
+
+<tr> <td> <td>  <input type='button' value='Register' onclick='show()'/></td></tr>
+</table>
+
+<p id="p1"></p>
+<script>
+function show()
+{
+a=i1.value;
+b=i2.value;
+c=i3.value;
+d=i4.value;
+e=i5.value;
+f=i6.value;
+g=i7.value;
+h=i8.value;
+i=i9.value;
+j=i10.value;
+out="<table border=10>"
+out+="<tr><th>Full name <td>"+a
+out+="<tr><th>User Id <td>"+b
+out+="<tr><th>Password <td>"+c
+out+="<tr><th>Email ID <td>"+d
+out+="<tr><th>Contact no <td>"+e
+out+="<tr><th>Date of Birth <td>"+f
+out+="<tr><th>Address <td>"+g
+out+="<tr><th>City <td>"+h
+out+="<tr><th>State <td>"+i
+out+="<tr><th>Country <td>"+j
+p1.innerHTML=out
+}
+</script>
+
+

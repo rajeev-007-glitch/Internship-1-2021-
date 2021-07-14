@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .screen { height:60px;width:335px; color:orange ;text-align:right;font-size:45; }
+        .btn { height:50px;width:80px; font-size:20;color:red }
+        .btn:hover {color:blue}
+        </style>
+        <html>
+        <center>
+        <title>A Simple Calculator</title>
+        <h1 style="color:magenta;size:18">A  Simple Calculator</h1>
+        <table border="0">
+        <tr><th colspan="4"><input id="or1" type="Number" class="screen"></th></tr>
+        <tr><th colspan="4"><input id="or2" type="Number" class="screen"></th></tr>
+        <tr>
+        <td><input type="button" value="+" class="btn" onclick="add()"/></td>
+        <td><input type="button" value="-" class="btn" onclick="sub()"/></td>
+        <td><input type="button" value="*" class="btn" onclick="mul()"/></td>
+        <td><input type="button" value="/" class="btn" onclick="div()"/></td>
+        </tr>
+        </table><br><br>
+        <output id=out class="screen" />
+        </html>
+        <script>
+        function add()
+        {
+        a=parseInt(or1.value);
+        b=parseInt(or2.value);
+        c=a+b;
+        out.value=a + " + " + b + '  is   ' +  c 
+        }
+        function sub()
+        {
+        a=parseInt(or1.value);
+        b=parseInt(or2.value);
+        c=a-b;
+        out.value=a +  " - "  + b +' is ' +  c 
+        }
+        function mul()
+        {
+        a=parseInt(or1.value);
+        b=parseInt(or2.value);
+        c=a*b;
+        out.value=a+" x "+b+'  is  ' +  c 
+        }
+        function div()
+        {
+        a=parseInt(or1.value);
+        b=parseInt(or2.value);
+        c=a/b;
+        out.value=a + " /" + b + ' is  ' + c 
+        }
+        </script>
+
+</body>
+</html>

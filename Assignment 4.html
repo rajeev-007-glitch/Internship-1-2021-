@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id=t1 /><br>
+    <input id=t2 /><br>
+    <input id=t3 /><br>
+    <input id=t4 /><br>
+    <input id=t5 /><br>
+    
+    <input type=button value=Average onclick="xyz()"/> <br>
+    <output id=out1 />
+
+<style>
+.screen { height:60px;width:390px; font-size:45;color:red;text-align:right }
+.btn { height:50px;width:160px; font-size:30px;color:red;allign:center }
+.btn2 {font-size:25px}
+.btn:hover {color:blue}
+</style>
+
+<html>
+<center>
+<title>Compare 3 Numbers</title>
+<heading>
+<h1 >
+<font-size:7> Program For Comparising 3 Number</strong>
+</font-size:7></h1></heading>
+<table border=1 >
+<tr ><th>Enter 1st Number  </th><td><input type="Number" id="first" class="screen" ></td> </tr>
+<tr > <th>Enter 2nd Number  </th><td><input type="Number" id="second"  class="screen" ></td></tr>
+<tr > <th>Enter 3rd Number  </th><td><input type="Number" id="third" class="screen" ></td></tr>
+<tr><td></td><td colspan=2><input type="button"value="Calculate" class="btn"onclick="compare()" </td></tr>
+<output id=out class="screen" />
+</html>
+
+<script>
+function compare()
+{
+a=parseInt(first.value);
+b=parseInt(second.value);
+c=parseInt(third.value);
+if(a>b&&a>c)d=a
+else if(b>a&&b>c )d=b
+else  d=c
+out.value="The Largest Among Three number "+a+"  ,  "+b+"  ,  "+c+"  is "+d 
+}
+</script>
+
+</body>
+</html>
